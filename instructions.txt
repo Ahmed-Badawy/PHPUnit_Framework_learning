@@ -1,0 +1,12 @@
+- install composer
+- create (composer.json) file then autoload a classmap with the (src/) in it
+
+- naming convention: if file is (Foo) then test name should be (FooTest)
+- after each file change you should: #composer dump-autoload (shortcut: #composer du)
+- in cmd run: # phpunit tests/
+
+- in cmd:
+			- #phpunit tests/				: outputs test output
+			- #phpunit --colors tests/    	: outputs the same but with colors
+			- #phpunit --colors --bootstrap-"vendor/autoload.php" tests
+			(or) just create xml file with bootstrap='vendor/autoload.php' onit

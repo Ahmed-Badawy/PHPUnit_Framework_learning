@@ -1,0 +1,18 @@
+<!-- lets identify which file to autoload before loading the unittest -->
+<phpunit
+	bootstrap='vendor/autoload.php'
+	colors='true'
+	convertErrorsToExceptions='true'
+	convertNoticesToExceptions='true'
+	convertWarningToExceptions='true'
+	processIsolation='false'
+	stopOnFailure='false'
+	syntaxCheck='false'
+>
+
+<!-- Now we will define testsuite to enable us to use test directries without defining the test directory -->
+	<testsuites>
+			<testsuite> <directory>tests</directory> </testsuite>
+	</testsuites>
+
+</phpunit>
